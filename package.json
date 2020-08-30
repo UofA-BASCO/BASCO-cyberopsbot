@@ -1,0 +1,14 @@
+{
+  "name": "cyberopsbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CyberOpsBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DJ Kempson (DJDaDingo)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
