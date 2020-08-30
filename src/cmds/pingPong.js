@@ -10,13 +10,13 @@ function pong (user) {
   return "that's not how it works, silly human. You ping, then I pong."
 }
 
-function pingPong (cmd, user) {
+function pingPong (cmd, user, msg) {
+  console.log(cmd)
   if (cmd === 'ping') {
-    return ping(user)
+    msg.reply(ping(user))
   } else if (cmd === 'pong') {
-    return pong(user)
+    msg.reply(pong(user))
   }
 }
 
-// exports.pingPong = pingPong
 module.exports = pingPong
