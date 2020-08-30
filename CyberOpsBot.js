@@ -1,34 +1,16 @@
-// Require the discord.js module
-/* Sets variables for guild, member, and nickname
-const guild = bot.guilds.cache.get('747336630863528046');
-const member = guild.member(message.author);
-const nickname = member ? member.displayName : null;
-*/
-
-// ping pong
-// const tableTennis = require('./src/cmds/pingPong')
-const pingPong = require('./src/cmds/pingPong.js')
-// import pingPong from './src/cmds/pingPong.mjs'
 
 const Discord = require('discord.js')
-
-// Create a new Discord client
 const bot = new Discord.Client()
-
-// Requires config file
 const config = require('./config.json')
+const prefix = config.prefix
+const pingPong = require('./src/cmds/pingPong.js')
 
-// Once the bot is ready, it outputs into log
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.tag}!`)
 })
-// Sets prefix for bot commands
-const prefix = config.prefix
 
-// Login to Discord with your app's token
 bot.login(config.token)
 
-// Message based commands
 bot.on('message', msg => {
   if (!msg.content.startsWith(prefix) || msg.author.bot) return
 
