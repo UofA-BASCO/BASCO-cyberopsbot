@@ -36,7 +36,7 @@ bot.on('message', msg => {
   // Request Role Command
   if (command === 'requestrole') {
     if (!args[0]) return msg.reply('please add the role name.')
-    msg.channel.send(`Yo, <@& 748982824660369428>, you gotta add`)
+    msg.channel.send(`Yo, <@&${748982824660369428}>, you gotta add`)
   }
 
   // Remove Role Command
