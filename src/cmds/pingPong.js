@@ -1,13 +1,13 @@
 function ping (user) {
   console.log(`Recieved a ping from ${user}...`)
-  console.log('So I ponged.')
   return 'pong.'
+  console.log('So I ponged.')
 }
 
 function pong (user) {
   console.log(`Recieved a pong from ${user}...`)
-  console.log('Humans are so dumb.')
   return "that's not how it works, silly human. You ping, then I pong."
+  console.log('Humans are so dumb.')
 }
 
 function pingPong (cmd, user, msg) {
