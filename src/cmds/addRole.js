@@ -8,7 +8,7 @@ function addRole (msg, args, username) {
       msg.reply(`I'm unable to find the role ${args[0]} ${args[1]} ${args[2]}.`)
       console.log(`I'm was unable to find the role ${args[0]} ${args[1]} ${args[2]} for ${username}.`)
     } else {
-      roleMember.roles.add(mentionedRole).then(msg.reply(`was successfully given the ${args[0]} ${args[1]} ${args[2]} role.`)).catch(console.error)
+      roleMember.roles.add(mentionedRole).then(msg.reply(`was successfully given the ${args[0]} ${args[1]} ${args[2]} role.`))
       console.log(`I successfully gave ${username} the ${args[0]} ${args[1]} ${args[2]} role.`)
     }
   } else if (args[0] && args[1] && !args[2]) {
@@ -17,7 +17,7 @@ function addRole (msg, args, username) {
       msg.reply(`I'm unable to use that role: ${args[0]} ${args[1]}`)
       console.log(`I'm was unable to find the role ${args[0]} ${args[1]} for ${username}.`)
     } else {
-      roleMember.roles.add(mentionedRole).then(msg.reply(`successfully given ${args[0]} ${args[1]} role.`)).catch(console.error)
+      roleMember.roles.add(mentionedRole).then(msg.reply(`successfully given ${args[0]} ${args[1]} role.`))
       console.log(`I successfully gave ${username} the ${args[0]} ${args[1]} role.`)
     }
   } else if (args[0] && !args[1] && !args[2]) {
@@ -26,7 +26,7 @@ function addRole (msg, args, username) {
       msg.reply(`I'm unable to use that role: ${args[0]}`)
       console.log(`I'm was unable to find the role ${args[0]} for ${username}.`)
     } else {
-      roleMember.roles.add(mentionedRole).then(msg.reply(`successfully given ${args[0]} role.`)).catch(console.error)
+      roleMember.roles.add(mentionedRole).then(msg.reply(`successfully given ${args[0]} role.`))
       console.log(`I successfully gave ${username} the ${args[0]} role.`)
     }
   }
