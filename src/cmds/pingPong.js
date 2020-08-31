@@ -1,4 +1,5 @@
-function ping (user) {
+
+function ping (user, msg) {
   console.log(`Recieved a ping from ${user}...`)
   return 'pong.'
   console.log('So I ponged.')
@@ -11,11 +12,10 @@ function pong (user) {
 }
 
 function pingPong (cmd, user, msg) {
-  console.log(cmd)
   if (cmd === 'ping') {
-    msg.reply(ping(user))
+    msg.reply(ping(user, msg))
   } else if (cmd === 'pong') {
-    msg.reply(pong(user))
+    msg.reply(pong(user, msg))
   }
 }
 
