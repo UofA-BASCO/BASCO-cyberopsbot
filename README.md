@@ -18,6 +18,8 @@ Specified setup:<br>
   -You can find your token by navigating to the 'Bot' tab of your bot in the portal and copy the 'Token', which can be found in the 'Build-A-Bot' section under the bot's 'Username'<br>
   -Ensure you have node.js, npm, and discord.js installed on your device (pm2 is recommended for better bot management, but is not required)<br>
   -Open a terminal and navigate to the application directory (If using Visual Studio Code, which is recommended, open a new terminal with Ctrl+Shift+`)<br>
-  -Run "pm2 start app.js --watch", where "app.js" is the filename for your main bot file ("--watch" is not required, but will allow for local editing with minimal bot interruption)<br>
-  -Run "pm2 logs" to view console logs and errors<br>
-  -Run "pm2 stop bot_main.js"
+  -Run "npm start"
+
+  This will install any dependencies and start the application
+
+  Be sure to test on a private server
