@@ -58,5 +58,3 @@ bot.on('message', msg => {
     msg.channel.send(`Command name: ${command}\nArguments: ${args}`)
   }
 })
-
-module.exports = bot
