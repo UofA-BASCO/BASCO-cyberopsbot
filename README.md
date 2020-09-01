@@ -7,7 +7,8 @@ Setup:<br>
 ```
        {
           "prefix": "!",
-          "token": "YOUR_TOKEN_HERE"
+          "token": "YOUR_TOKEN_HERE",
+          "auditID": "CHANNEL_ID_TO_SEND_AUDT_LOGS"
         }
 ```
 
