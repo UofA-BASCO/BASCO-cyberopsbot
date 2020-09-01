@@ -11,7 +11,7 @@ Specified setup:<br>
 ```
        {
           "prefix": "YOUR_COMMAND_PREFIX_HERE",
-          "token": "YOUR_TOKEN_HERE"
+          "token": "YOUR_TOKEN_HERE",
           "auditID": "CHANNEL_ID_TO_SEND_AUDT_LOGS"
         }
 ```
