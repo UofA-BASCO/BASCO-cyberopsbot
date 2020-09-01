@@ -1,4 +1,4 @@
-Setup:
+Setup:<br>
   -Create a bot on Discord<br>
   -Set the permissions<br>
   -Invite the bot to the server<br>
