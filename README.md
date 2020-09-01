@@ -1,8 +1,8 @@
 Setup:
-  -Create a bot on Discord
-  -Set the permissions
-  -Invite the bot to the server
-  -The the application directory create a config.json file
+  -Create a bot on Discord<br>
+  -Set the permissions<br>
+  -Invite the bot to the server<br>
+  -The the application directory create a config.json file<br>
   -Add the following:
 ```
        {
@@ -11,9 +11,9 @@ Setup:
         }
 ```
 
-To start:
-  -Go to the directory of bot
-  -Run "npm start"
+To start:<br>
+  -Go to the directory of bot<br>
+  -Run "npm start"<br>
 
 This will install any dependencies and start the application.
 
