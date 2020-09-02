@@ -68,31 +68,31 @@ function shrug (user, msg) {
   
     function lolCommands (cmd, user, msg) {
   if (cmd === 'tableflip') {
-    msg.send.channel(tablefilp(user, msg)).then(auditLog('(╯°□°）╯︵ ┻━┻', msg))
+    msg.channel.send(tablefilp(user, msg)).then(auditLog('(╯°□°）╯︵ ┻━┻', msg))
   } if (cmd === 'unflip') {
-    msg.send.channel(unflip(user, msg)).then(auditLog('┬─┬ ノ( ゜-゜ノ)', msg))
+    msg.channel.send(unflip(user, msg)).then(auditLog('┬─┬ ノ( ゜-゜ノ)', msg))
   } if (cmd === 'shrug') {
-    msg.send.channel(shrug(user, msg)).then(auditLog('¯\_(ツ)_/¯', msg))
+    msg.channel.send(shrug(user, msg)).then(auditLog('¯\_(ツ)_/¯', msg))
   } if (cmd === 'disapprove') {
-    msg.send.channel(disapprove(user, msg)).then(auditLog('ಠ_ಠ', msg))
+    msg.channel.send(disapprove(user, msg)).then(auditLog('ಠ_ಠ', msg))
   } if (cmd === 'lenny') {
-    msg.send.channel(lenny(user, msg)).then(auditLog('( ͡° ͜ʖ ͡°)', msg))
+    msg.channel.send(lenny(user, msg)).then(auditLog('( ͡° ͜ʖ ͡°)', msg))
   } if (cmd === 'cute') {
-    msg.send.channel(cute(user, msg)).then(auditLog('(づ◕ᗜ◕)づ', msg))
+    msg.channel.send(cute(user, msg)).then(auditLog('(づ◕ᗜ◕)づ', msg))
   } if (cmd === 'idk') {
-    msg.send.channel(idk(user, msg)).then(auditLog('¯\(°_o)/¯', msg))
+    msg.channel.send(idk(user, msg)).then(auditLog('¯\(°_o)/¯', msg))
   } if (cmd === 'awkward') {
-    msg.send.channel(awkward(user, msg)).then(auditLog('( ་ ⍸ ་ )', msg))
+    msg.channel.send(awkward(user, msg)).then(auditLog('( ་ ⍸ ་ )', msg))
   } if (cmd === 'flex') {
-    msg.send.channel(flex(user, msg)).then(auditLog('ᕦ(ò_óˇ)ᕤ', msg))
+    msg.channel.send(flex(user, msg)).then(auditLog('ᕦ(ò_óˇ)ᕤ', msg))
   }  if (cmd === 'eat') {
-    msg.send.channel(eat(user, msg)).then(auditLog('( ˘▽˘)っ♨', msg))
+    msg.channel.send(eat(user, msg)).then(auditLog('( ˘▽˘)っ♨', msg))
   }  if (cmd === 'food') {
-    msg.send.channel(food(user, msg)).then(auditLog('Fooooood…ԅ(¯﹃¯ԅ)', msg))
+    msg.channel.send(food(user, msg)).then(auditLog('Fooooood…ԅ(¯﹃¯ԅ)', msg))
   }  if (cmd === 'sleep') {
-    msg.send.channel(sleep(user, msg)).then(auditLog('zzz ˘◡˘ ᶻᶻᶻ ☽˚｡⋆ ᵍᵒᵒᵈ ⁿᶦᵍʰᵗ', msg))
+    msg.channel.send(sleep(user, msg)).then(auditLog('zzz ˘◡˘ ᶻᶻᶻ ☽˚｡⋆ ᵍᵒᵒᵈ ⁿᶦᵍʰᵗ', msg))
   } if (cmd === 'run') {
-    msg.send.channel(run(user, msg)).then(auditLog('ε=┌(;･_･)┘', msg))
+    msg.channel.send(run(user, msg)).then(auditLog('ε=┌(;･_･)┘', msg))
   }
 }
 
