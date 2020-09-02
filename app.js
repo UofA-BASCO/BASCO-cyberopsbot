@@ -24,9 +24,7 @@ bot.on('message', msg => {
   const commands = {
     'ping': () => pingPong(command, username, msg),
     'addrole': () => addRole(msg, args, username),
-    'role': () => {
-      msg.reply("if you are trying to add a role, use '!addrole' with the class code behind it, e.g. '!addrole CYBV 301'. If the role for your class doesn't exist, use the command '!requestrole' using the same syntax as '!addrole'.")
-    },
+    'role': () => msg.reply("if you are trying to add a role, use '!addrole' with the class code behind it, e.g. '!addrole CYBV 301'. If the role for your class doesn't exist, use the command '!requestrole' using the same syntax as '!addrole'."),
     'requestrole': () => {
       if (!args[0]) return msg.reply('please add the role name.')
       msg.channel.send(`Yo, <@&${748982824660369428}>, you gotta add`)
