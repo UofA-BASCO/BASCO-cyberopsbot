@@ -12,7 +12,7 @@ function unflip (user, msg) {
 
 function shrug (user, msg) {
   auditLog(`${user} shrugged.`, msg)
-  return '¯\_(ツ)_/¯'
+  return '¯\\_(ツ)_/¯'
 }
 
 function disapprove (user, msg) {
@@ -32,7 +32,7 @@ function cute (user, msg) {
 
 function idk (user, msg) {
   auditLog(`${user} has no idea`, msg)
-  return '¯\(°_o)/¯'
+  return '¯\\(°_o)/¯'
 }
 
 function awkward (user, msg) {
@@ -71,7 +71,7 @@ function lolCommands (cmd, user, msg) {
   } if (cmd === 'unflip') {
     msg.channel.send(unflip(user, msg)).then(auditLog('┬─┬ ノ( ゜-゜ノ)', msg))
   } if (cmd === 'shrug') {
-    msg.channel.send(shrug(user, msg)).then(auditLog('¯\_(ツ)_/¯', msg))
+    msg.channel.send(shrug(user, msg)).then(auditLog('¯\\_(ツ)_/¯', msg))
   } if (cmd === 'disapprove') {
     msg.channel.send(disapprove(user, msg)).then(auditLog('ಠ_ಠ', msg))
   } if (cmd === 'lenny') {
@@ -79,7 +79,7 @@ function lolCommands (cmd, user, msg) {
   } if (cmd === 'cute') {
     msg.channel.send(cute(user, msg)).then(auditLog('(づ◕ᗜ◕)づ', msg))
   } if (cmd === 'idk') {
-    msg.channel.send(idk(user, msg)).then(auditLog('¯\(°_o)/¯', msg))
+    msg.channel.send(idk(user, msg)).then(auditLog('¯\\(°_o)/¯', msg))
   } if (cmd === 'awkward') {
     msg.channel.send(awkward(user, msg)).then(auditLog('( ་ ⍸ ་ )', msg))
   } if (cmd === 'flex') {
