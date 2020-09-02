@@ -4,6 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "clean": "rm -r dist/*",
+    "dist": "mkdir -p dist && cp -r node_modules dist/ && cp -r src dist/ && cp app.js dist/",
     "fix": "eslint --cache --cache-location .cache/.eslintcache --fix *.js src/**",
     "lint": "eslint --cache --cache-location .cache/.eslintcache *.js src/**",
     "test": "echo \"Error: no test specified\" && exit 1",
