@@ -17,9 +17,9 @@ const lolCommands = require('./src/cmds/lolCommands')
 bot.on('message', msg => {
   if (!msg.content.startsWith(prefix) || msg.author.bot) return
 
-  let username = msg.author.username
-  let command = msg.content.split(' ')[0].slice(config.prefix.length)
-  let args = msg.content.split(' ').slice(1)
+  const username = msg.author.username
+  const command = msg.content.split(' ')[0].slice(config.prefix.length)
+  const args = msg.content.split(' ').slice(1)
 
   if (command === 'ping' || command === 'pong') {
     pingPong(command, username, msg)
@@ -48,7 +48,7 @@ bot.on('message', msg => {
 
   // Help Command
   if (command === 'help') {
-    msg.channel.send(`List of common useful commands:\n!help\n!ping\n!roles\n!role\n!addrole\n!removerole\n!requestrole\n`)
+    msg.channel.send('List of common useful commands:\n!help\n!ping\n!roles\n!role\n!addrole\n!removerole\n!requestrole\n')
   }
 
   // Args-Info Command
@@ -59,7 +59,7 @@ bot.on('message', msg => {
 
     msg.channel.send(`Command name: ${command}\nArguments: ${args}`)
   }
-  
+
   if (command === 'tableflip' || command === 'unflip' || command === 'shrug' || command === 'disapprove' || command === 'lenny' || command === 'cute' || command === 'idk' || command === 'awkward' || command === 'flex' || command === 'eat' || command === 'food' || command === 'sleep' || command === 'run') {
     lolCommands(command, username, msg)
   }

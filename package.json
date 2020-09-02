@@ -10,6 +10,7 @@
   "author": "DJ Kempson (DJDaDingo)",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.3.1"
+    "discord.js": "^12.3.1",
+    "standard": "^14.3.4"
   }
 }
