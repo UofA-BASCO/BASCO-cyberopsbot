@@ -12,6 +12,7 @@ bot.login(config.token)
 const pingPong = require('./src/cmds/pingPong')
 const addRole = require('./src/cmds/addRole')
 const removeRole = require('./src/cmds/removeRole')
+const lolCommands = require('.src/cmds/lolCommands')
 
 bot.on('message', msg => {
   if (!msg.content.startsWith(prefix) || msg.author.bot) return
@@ -58,4 +59,9 @@ bot.on('message', msg => {
 
     msg.channel.send(`Command name: ${command}\nArguments: ${args}`)
   }
+  
+  if (command === 'tableflip' || command === 'unflip' || command === 'shrug' || command === 'disapprove' || command === 'lenny' || command === 'cute' || command === 'idk' || command === 'awkward' || command === 'flex' || command === 'eat' || command === 'food' || command === 'sleep' || command === 'run') {
+    lolCommands(command, username, msg)
+  }
+
 })
