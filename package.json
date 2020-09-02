@@ -4,6 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "fix": "eslint --cache --cache-location .cache/.eslintcache --fix *.js src/**",
+    "lint": "eslint --cache --cache-location .cache/.eslintcache *.js src/**",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install --save; node app.js"
   },
