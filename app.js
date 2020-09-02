@@ -11,6 +11,7 @@ bot.login(config.token)
 
 const pingPong = require('./src/cmds/pingPong')
 const addRole = require('./src/cmds/addRole')
+const removeRole = require('./src/cmds/removeRole')
 
 bot.on('message', msg => {
   if (!msg.content.startsWith(prefix) || msg.author.bot) return
@@ -41,7 +42,7 @@ bot.on('message', msg => {
 
   // Remove Role Command
   if (command === 'removerole') {
-
+    removeRole(args, msg, username)
   }
 
   // Help Command
