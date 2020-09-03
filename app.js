@@ -13,7 +13,7 @@ const pingPong = require('./src/cmds/pingPong')
 const addRole = require('./src/cmds/addRole')
 const removeRole = require('./src/cmds/removeRole')
 const lolCommands = require('./src/cmds/lolCommands')
-
+/* Welcome and Leave
 bot.on('guildMemberAdd', member => {
   const auditLog = require('../utils/auditLog')
   const channelName = 'general'
@@ -41,7 +41,7 @@ bot.on('guildMemberRemove', member => {
   channel.send(`${member} has just left the server. Bye bye.`)
   auditLog(`${member} has left the server`)
 })
-
+*/
 bot.on('message', msg => {
   if (!msg.content.startsWith(prefix) || msg.author.bot) return
 
