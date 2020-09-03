@@ -3,7 +3,7 @@ const auditLog = require('../utils/auditLog')
 function addRole (msg, args, username) {
   const roleMember = msg.member
   var mentionedRole = null
-  
+
   if (!args[0]) return 'please add the role name.'
 
   if (args[0] && args[1] && args[2]) {
