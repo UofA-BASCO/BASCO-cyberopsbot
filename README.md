@@ -24,3 +24,16 @@ Specified setup:<br>
   This will install any dependencies and start the application
 
   Be sure to test on a private server
+
+## Docker
+### Build
+`docker build . -t basco`
+
+### Run
+`docker run --rm -it --env-file .env basco:latest`
+
+### Environment Variables
+The required environment variables are:
+- APP_AUDIT_ID
+- APP_PREFIX
+- APP_TOKEN
