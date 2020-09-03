@@ -16,4 +16,4 @@ USER basco
 
 WORKDIR /app
 
-ENTRYPOINT ["node", "app.js"]
+ENTRYPOINT ["node", "--unhandled-rejections=strict", "app.js"]
