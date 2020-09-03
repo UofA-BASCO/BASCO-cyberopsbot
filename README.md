@@ -31,3 +31,9 @@ Specified setup:<br>
 
 ### Run
 `docker run --rm -it --env-file .env basco:latest`
+
+### Environment Variables
+The required environment variables are:
+- APP_AUDIT_ID
+- APP_PREFIX
+- APP_TOKEN
