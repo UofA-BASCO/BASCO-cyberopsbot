@@ -117,4 +117,4 @@ dist
 
 # Other
 .DS_Store
-/config.json
+config.json
