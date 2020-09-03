@@ -3,7 +3,7 @@ FROM node:14.9-stretch as builder
 COPY . /src
 
 RUN cd /src && \
-  git clean -ffdx && \
+  git clean -ffdX && \
   npm run dist
 
 FROM node:14.9-stretch
