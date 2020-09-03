@@ -5,7 +5,7 @@ var config = {}
 try {
   const configFile = 'config.json'
   if (fs.existsSync(configFile)) {
-    config = require('config.json')
+    config = require(configFile)
   } else {
     config = {
       prefix: process.env.APP_PREFIX,
