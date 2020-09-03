@@ -14,6 +14,34 @@ const addRole = require('./src/cmds/addRole')
 const removeRole = require('./src/cmds/removeRole')
 const lolCommands = require('./src/cmds/lolCommands')
 
+bot.on('guildMemberAdd', member => {
+  const auditLog = require('../utils/auditLog')
+  const channelName = 'general'
+  const channel = member.guild.channels.cache.find(channel => channel.name === `${channelName}`)
+
+  if (!channel) {
+    auditLog('No welcome channel found', Discord.Message)
+    return
+  }
+
+  channel.send(`Welcome ${member} to the server. Please read #rules and have fun!`)
+  auditLog(`${member} has been welcomed to the server`)
+})
+
+bot.on('guildMemberRemove', member => {
+  const auditLog = require('../utils/auditLog')
+  const channelName = 'general'
+  const channel = member.guild.channels.cache.find(channel => channel.name === `${channelName}`)
+
+  if (!channel) {
+    auditLog('No welcome channel found', Discord.Message)
+    return
+  }
+
+  channel.send(`${member} has just left the server. Bye bye.`)
+  auditLog(`${member} has left the server`)
+})
+
 bot.on('message', msg => {
   if (!msg.content.startsWith(prefix) || msg.author.bot) return
 
