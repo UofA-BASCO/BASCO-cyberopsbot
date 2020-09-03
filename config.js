@@ -3,7 +3,7 @@ const fs = require('fs')
 var config = {}
 
 try {
-  const configFile = 'config.json'
+  const configFile = './config.json'
   if (fs.existsSync(configFile)) {
     config = require(configFile)
   } else {
