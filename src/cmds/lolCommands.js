@@ -76,7 +76,7 @@ function lolCommands (cmd, user, msg) {
   } if (cmd === 'unflip') {
     msg.channel.send(unflip(user, msg)).then(auditLog('┬─┬ ノ( ゜-゜ノ)', msg))
   } if (cmd === 'shrug') {
-    msg.channel.send(shrug(user, msg)).then(auditLog('¯\_(ツ)_/¯', msg))
+    msg.channel.send(shrug(user, msg)).then(auditLog('¯\\_(ツ)_/¯', msg))
   } if (cmd === 'disapprove') {
     msg.channel.send(disapprove(user, msg)).then(auditLog('ಠ_ಠ', msg))
   } if (cmd === 'lenny') {
@@ -84,7 +84,7 @@ function lolCommands (cmd, user, msg) {
   } if (cmd === 'cute') {
     msg.channel.send(cute(user, msg)).then(auditLog('(づ◕ᗜ◕)づ', msg))
   } if (cmd === 'idk') {
-    msg.channel.send(idk(user, msg)).then(auditLog('¯\(°_o)/¯', msg))
+    msg.channel.send(idk(user, msg)).then(auditLog('¯\\(°_o)/¯', msg))
   } if (cmd === 'awkward') {
     msg.channel.send(awkward(user, msg)).then(auditLog('( ་ ⍸ ་ )', msg))
   } if (cmd === 'flex') {
@@ -98,7 +98,7 @@ function lolCommands (cmd, user, msg) {
   } if (cmd === 'run') {
     msg.channel.send(run(user, msg)).then(auditLog('ε=┌(;･_･)┘', msg))
   } if (cmd === 'loveyou') {
-    msg.channel.send(run(user, msg)).then(auditLog('(ღˇ◡ˇ)❤', msg))
+    msg.channel.send(loveyou(user, msg)).then(auditLog('(ღˇ◡ˇ)❤', msg))
   }
 }
 
