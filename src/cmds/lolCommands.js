@@ -65,6 +65,11 @@ function run (user, msg) {
   return 'ε=┌(;･_･)┘'
 }
 
+function loveyou (user, msg) {
+  auditLog(`${user} is loved`, msg)
+  return '(ღˇ◡ˇ)❤'
+}
+
 function lolCommands (cmd, user, msg) {
   if (cmd === 'tableflip') {
     msg.channel.send(tablefilp(user, msg)).then(auditLog('(╯°□°）╯︵ ┻━┻', msg))
@@ -92,6 +97,8 @@ function lolCommands (cmd, user, msg) {
     msg.channel.send(sleep(user, msg)).then(auditLog('zzz ˘◡˘ ᶻᶻᶻ ☽˚｡⋆ ᵍᵒᵒᵈ ⁿᶦᵍʰᵗ', msg))
   } if (cmd === 'run') {
     msg.channel.send(run(user, msg)).then(auditLog('ε=┌(;･_･)┘', msg))
+  } if (cmd === 'loveyou') {
+    msg.channel.send(loveyou(user, msg)).then(auditLog('(ღˇ◡ˇ)❤', msg))
   }
 }
 

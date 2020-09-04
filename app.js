@@ -84,7 +84,8 @@ bot.on('message', msg => {
     eat: commands.lol,
     food: commands.lol,
     sleep: commands.lol,
-    run: commands.lol
+    run: commands.lol,
+    loveyou: commands.lol
   }
 
   const cmd = {
