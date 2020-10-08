@@ -55,7 +55,8 @@ bot.on('message', msg => {
     role: () => msg.reply("if you are trying to add a role, use '!addrole' with the class code behind it, e.g. '!addrole CYBV 301'. If the role for your class doesn't exist, use the command '!requestrole' using the same syntax as '!addrole'."),
     requestrole: () => {
       if (!args[0]) return msg.reply('please add the role name.')
-      msg.channel.send(`Yo, <@&${748982824660369428}>, you gotta add`)
+      const hq = bot.channels.cache.get('751200493467992206')
+      hq.send(`@here ${msg.author.tag} is requesting role ${!args[0]}`)
     },
     removerole: () => removeRole(args, msg, username),
     help: () => msg.channel.send('List of common useful commands:\n!help\n!ping\n!roles\n!role\n!addrole\n!removerole\n!requestrole\n'),
