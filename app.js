@@ -56,7 +56,8 @@ bot.on('message', msg => {
     requestrole: () => {
       if (!args[0]) return msg.reply('please add the role name.')
       const hq = bot.channels.cache.get('751200493467992206')
-      hq.send(`@here ${msg.author.tag} is requesting role ${args[0]}`)
+      hq.send(`${msg.author.username} is requesting role ${args[0]}`)
+      msg.channel.send('Thank you for your request, a mod will get back to you as soon as possible.')
     },
     removerole: () => removeRole(args, msg, username),
     help: () => msg.channel.send('List of common useful commands:\n!help\n!ping\n!roles\n!role\n!addrole\n!removerole\n!requestrole\n'),
