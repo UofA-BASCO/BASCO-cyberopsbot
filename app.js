@@ -57,7 +57,7 @@ bot.on('message', msg => {
     requestrole: () => {
       if (!args[0]) return msg.reply('please add the role name.')
       const hq = bot.channels.cache.get('751200493467992206')
-      hq.send(`\`\`\`fix\n${msg.author} is requesting role ${args[0]}\n\`\`\``)
+      hq.send(`${msg.author} is requesting role ${args[0]}`)
         .then(msg.channel.send('Thank you for your request, a mod will get back to you as soon as possible.'))
         .then(auditLog(`${msg.author} requested role ${args[0]}`, msg))
     },
