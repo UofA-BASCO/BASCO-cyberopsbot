@@ -59,7 +59,7 @@ bot.on('message', msg => {
       const hq = bot.channels.cache.get('751200493467992206')
       hq.send(`${msg.author} is requesting role ${args[0]}`)
         .then(msg.channel.send('Thank you for your request, a mod will get back to you as soon as possible.'))
-        .then(auditLog(`${msg.author} requested role ${args[0]}`, msg))
+        .then(auditLog(`${msg.author}:${msg.author.tag} requested role ${args[0]}`, msg))
     },
     removerole: () => removeRole(args, msg, username),
     help: () => msg.channel.send('List of common useful commands:\n!help\n!ping\n!roles\n!role\n!addrole\n!removerole\n!requestrole\n'),
